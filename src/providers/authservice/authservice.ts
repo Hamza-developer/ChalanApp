@@ -7,9 +7,9 @@ import 'rxjs/add/operator/map';
 export class AuthserviceProvider {
 
   url;
-  authToken: any;
   user: any;
-
+  authToken: any;
+  
   constructor(public http: HttpClient, private storage: Storage){
     this.url = 'https://tcs-server.herokuapp.com/api/';
   }
